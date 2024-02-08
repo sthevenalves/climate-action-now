@@ -101,3 +101,7 @@ body {
     margin: .6rem;
     padding: .6rem;
 }
+
+#error-message{
+    margin-top: 12px;
+}
