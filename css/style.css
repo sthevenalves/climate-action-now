@@ -1,0 +1,48 @@
+/* geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide{
+    display: none
+}
+
+.container{
+    background-color: #5c54ed;
+    box-shadow: 0px 3px 8px #0000003b;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+}
+
+.form h3{
+    display:flex
+}
+.form input{
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+
+.form button{
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
