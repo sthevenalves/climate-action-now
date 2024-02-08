@@ -6,12 +6,8 @@
 
 <h3>Deploy do Projeto: https://sthevenalves.github.io/climate-action-now/</h3>
 
-<table>
-  <tr>
-    <td><img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/weather-img-01.png" alt="Imagem 1" height="250" width="390px"></td>
-    <td><img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/weather-img-02.png" alt="Imagem 2" height="250" width="390px"></td>
-  </tr>
-</table>
+   <td><img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/weather-img-01.png" alt="Imagem 1"></td>
+
 
  <ul>
     <li><a href="#tec">Tecnologias</a>
