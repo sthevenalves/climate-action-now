@@ -26,17 +26,22 @@ const getWeatherData = async (city) => {
     return data;
 }
 
-
 const showErrorMessage = () => {
+    clearSearch();
     weatherContainer.classList.add("hide")
     errorMessageContainer.classList.remove("hide");
-    
-
 };
+
+const clearSearch = () => {
+    cityInput.value = "";
+}
 
 const showWeatherData = async (city) => {
 
     try {
+        
+        errorMessageContainer.classList.add("hide");
+
         const data = await getWeatherData(city);
 
         if (data.cod === "404") {
@@ -53,7 +58,7 @@ const showWeatherData = async (city) => {
         windElement.innerText = `${data.wind.speed}km/h`;
         weatherContainer.classList.remove("hide")
 
-        cityInput.value = "";
+        clearSearch();
     }
     catch (err) {
         console.log("erro: " + err)
