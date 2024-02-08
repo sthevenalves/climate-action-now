@@ -6,15 +6,18 @@
 
 <h3>Deploy do Projeto: https://sthevenalves.github.io/climate-action-now/</h3>
 
-   <td><img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/weather-img-01.png" alt="Imagem 1"></td>
-
-
  <ul>
+    <li><a href="#proj">Projeto</a>
     <li><a href="#tec">Tecnologias</a>
     <li><a href="#func">Funcionalidades</a> 
     <li><a href="#desc">Descrição</a> 
     <li><a href="#inst">Intalação</a> 
  </ul> 
+
+<h2 id="proj">Projeto</h2>
+ 
+   <td><img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/weather-img-01.png" alt="Imagem 1" height="462" width="866"></td>
+
 
  <h2 id="tec">Tecnologias</h2>
   <ul>
