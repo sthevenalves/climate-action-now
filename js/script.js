@@ -14,26 +14,31 @@ const weatherContainer = document.querySelector('#weather-data');
 
 const errorMessageContainer = document.querySelector("#error-message");
 
+const suggestionContainer = document.querySelector("#suggestions");
+const suggestionButtons = document.querySelectorAll("#suggestions button");
+
 const getWeatherData = async (city) => {
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
 
     const res = await fetch(apiWeatherUrl);
     const data = await res.json();
 
-    console.log(data);
-
     return data;
 }
 
+
 const showErrorMessage = () => {
+    weatherContainer.classList.add("hide")
     errorMessageContainer.classList.remove("hide");
+    
+
 };
 
 const showWeatherData = async (city) => {
 
     try {
         const data = await getWeatherData(city);
-        
+
         if (data.cod === "404") {
             showErrorMessage();
             return;
@@ -47,6 +52,8 @@ const showWeatherData = async (city) => {
         humidityElement.innerText = `${data.main.humidity}%`;
         windElement.innerText = `${data.wind.speed}km/h`;
         weatherContainer.classList.remove("hide")
+
+        cityInput.value = "";
     }
     catch (err) {
         console.log("erro: " + err)
@@ -66,3 +73,11 @@ cityInput.addEventListener("keyup", (e) => {
         showWeatherData(city);
     }
 })
+
+suggestionButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const city = btn.getAttribute("id");
+
+        showWeatherData(city);
+    });
+});
