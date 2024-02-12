@@ -16,7 +16,7 @@
 
 <h2 id="proj">Projeto</h2>
  
-   <img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/weather-img-01.png" alt="Imagem 1" width="866">
+   <img src="https://github.com/sthevenalves/climate-action-now/blob/main/printscreen-project/image.png">
 
 
  <h2 id="tec">Tecnologias</h2>
