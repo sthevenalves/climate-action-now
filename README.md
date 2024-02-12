@@ -11,7 +11,7 @@
     <li><a href="#tec">Tecnologias</a>
     <li><a href="#func">Funcionalidades</a> 
     <li><a href="#desc">Descrição</a> 
-    <li><a href="#inst">Intalação</a> 
+    <li><a href="#inst">Instalação</a> 
  </ul> 
 
 <h2 id="proj">Projeto</h2>
@@ -30,7 +30,7 @@
   <h2 id="func">Funcionalidades</h2>
   <ul>
     <li>Buscar informações meteorológicas de diferentes cidades</li>
-    <li>Tratamento de Erros</li>
+    <li>Tratamento de respostas de erro</li>
   </ul>
 
 <h2 id="desc">Descrição</h2>
